@@ -14,7 +14,7 @@ use zip::ZipArchive;
 
 pub fn create_data_directory() -> Result<(), Box<dyn Error>> {
     let home_dir: PathBuf = dirs::home_dir().expect("Unable to get home directory");
-    let data_dir: PathBuf = home_dir.join(".aaahhh");
+    let data_dir: PathBuf = home_dir.join(".keyso");
     let _ = fs::create_dir(&data_dir)
         .map_err(|err: io::Error| EchoErrors::CouldNotCreateDataDirectory { err });
 

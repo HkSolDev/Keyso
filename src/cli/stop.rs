@@ -5,7 +5,7 @@ use console::style;
 
 pub fn stop() -> Result<(), Box<dyn Error>> {
     if !PID_FILE_PATH.exists() {
-        println!("{}", style("No running aaahhh process found (PID file missing).").red());
+        println!("{}", style("No running keyso process found (PID file missing).").red());
         return Ok(());
     }
 
@@ -25,9 +25,9 @@ pub fn stop() -> Result<(), Box<dyn Error>> {
     let pid = Pid::from(pid_num);
     if let Some(process) = sys.process(pid) {
         process.kill();
-        println!("{}", style(format!("Killed aaahhh background process (PID {})", pid_num)).green());
+        println!("{}", style(format!("Killed keyso background process (PID {})", pid_num)).green());
     } else {
-        println!("{}", style("aaahhh process is not running, but PID file remained. Cleaning it up.").yellow());
+        println!("{}", style("keyso process is not running, but PID file remained. Cleaning it up.").yellow());
     }
 
     let _ = fs::remove_file(&*PID_FILE_PATH);

@@ -127,13 +127,13 @@ lazy_static! {
 lazy_static! {
     pub static ref FILE_PATH: PathBuf = {
         let home_dir = home_dir().expect("Failed to retrieve the user's home directory");
-        let data_path = home_dir.join(".aaahhh");
+        let data_path = home_dir.join(".keyso");
 
         data_path
     };
 
     pub static ref PID_FILE_PATH: PathBuf = {
-        FILE_PATH.join("aaahhh.pid")
+        FILE_PATH.join("keyso.pid")
     };
 }
 

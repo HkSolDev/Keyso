@@ -20,7 +20,7 @@ fn spawn_daemon(index: usize, debug: bool, volume: f32) {
        .stderr(Stdio::null());
        
     match cmd.spawn() {
-        Ok(child) => println!("Aaahhh is playing smoothly in the background! (PID: {}) \nRun `aaahhh stop` to terminate it.", child.id()),
+        Ok(child) => println!("Keyso is playing smoothly in the background! (PID: {}) \nRun `keyso stop` to terminate it.", child.id()),
         Err(e) => eprintln!("Failed to start background process: {}", e),
     }
 }

@@ -7,7 +7,7 @@ use cli::start::start;
 use console::Term;
 use core::utils::create_data_directory;
 #[derive(Parser)]
-#[clap(name = "Aaahhh", version = "0.1.4", author = "Subhajit chaudhury")]
+#[clap(name = "keyso", version = "0.1.0", author = "Hemant Kumar")]
 struct CLI {
     #[command(subcommand)]
     command: Commands,

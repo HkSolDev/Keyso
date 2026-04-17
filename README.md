@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⌨️ Aaahhh 
+# ⌨️ Keyso 
 
 **A lightning-fast, ultra-lightweight, native mechanical keyboard sound simulator written in Rust.**
 
@@ -41,37 +41,37 @@ Experience the satisfying auditory feedback of premium mechanical switches on *a
 
 Ensure you have [Rust and Cargo](https://rustup.rs/) installed on your machine.
 
-Since `aaahhh` is officially published to `crates.io`, you can securely install the global binary directly:
+Since `keyso` is officially published to `crates.io`, you can securely install the global binary directly:
 
 ```bash
-cargo install aaahhh
+cargo install keyso
 ```
 
-*(This compiles the tool from source with optimizations and places the `aaahhh` binary securely into your global Cargo bin directory!)*
+*(This compiles the tool from source with optimizations and places the `keyso` binary securely into your global Cargo bin directory!)*
 
 ---
 
 ## 🚀 Usage
 
-Aaahhh is designed with an extremely simple CLI designed to get out of your way.
+Keyso is designed with an extremely simple CLI designed to get out of your way.
 
 ### Start the Simulator
 
 ```bash
-aaahhh start
+keyso start
 ```
 This drops you into a quick, interactive dropdown menu to let you select your desired mechanical switch. 
 
-> **Note:** *If this is your first time using a specific switch, Aaahhh will automatically fetch and unpack the exact sound profiles required into a hidden `~/.aaahhh` directory in your home path.*
+> **Note:** *If this is your first time using a specific switch, Keyso will automatically fetch and unpack the exact sound profiles required into a hidden `~/.keyso` directory in your home path.*
 
-Once selected, Aaahhh instantly spins up the audio listener natively in the background and releases your terminal line. You can safely close the window and the sounds will track globally across your OS!
+Once selected, Keyso instantly spins up the audio listener natively in the background and releases your terminal line. You can safely close the window and the sounds will track globally across your OS!
 
 ### Stop the Simulator
 
 ```bash
-aaahhh stop
+keyso stop
 ```
-There's no need to reach for your task manager! Aaahhh utilizes process-ID (PID) targeting. Executing `aaahhh stop` instantly searches for your active background daemon and safely shuts it down from any terminal window.
+There's no need to reach for your task manager! Keyso utilizes process-ID (PID) targeting. Executing `keyso stop` instantly searches for your active background daemon and safely shuts it down from any terminal window.
 
 ---
 
@@ -106,7 +106,7 @@ src/
 If you are developing or experiencing hook-failure issues, you can append the built-in debug flag when spawning:
 
 ```bash
-aaahhh start --debug
+keyso start --debug
 ```
 
 This forces the tool to emit verbose standard logs (e.g., directory allocation, hook recognition times, missing config errors).
@@ -117,6 +117,6 @@ This forces the tool to emit verbose standard logs (e.g., directory allocation, 
 
 ## 👤 Author
 
-**Subhajit chaudhury**  
-GitHub: [@subhdotsol](https://github.com/subhdotsol)
+**Hemant Kumar**  
+GitHub: [@hksoldev](https://github.com/hksoldev)
 <!-- Doc verification -->

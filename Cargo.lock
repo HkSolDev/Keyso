@@ -3,27 +3,6 @@
 version = 4
 
 [[package]]
-name = "aaahhh"
-version = "0.1.4"
-dependencies = [
- "clap",
- "console",
- "dialoguer",
- "dirs",
- "indicatif",
- "lazy_static",
- "rdev",
- "rodio",
- "serde",
- "serde_json",
- "sysinfo",
- "tracing",
- "tracing-subscriber",
- "ureq",
- "zip",
-]
-
-[[package]]
 name = "adler2"
 version = "2.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -982,6 +961,27 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6a88f1bda2bd75b0452a14784937d796722fdebfe50df998aeb3f0b7603019a9"
 dependencies = [
  "wasm-bindgen",
+]
+
+[[package]]
+name = "keyso"
+version = "0.1.0"
+dependencies = [
+ "clap",
+ "console",
+ "dialoguer",
+ "dirs",
+ "indicatif",
+ "lazy_static",
+ "rdev",
+ "rodio",
+ "serde",
+ "serde_json",
+ "sysinfo",
+ "tracing",
+ "tracing-subscriber",
+ "ureq",
+ "zip",
 ]
 
 [[package]]

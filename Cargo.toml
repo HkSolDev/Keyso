@@ -1,14 +1,14 @@
 [package]
-name = "aaahhh"
-description = "A lightning fast mechanical keyboard sound simulator"
-version = "0.1.4"
+name = "keyso"
+description = "A mechanical keyboard sound stroke simulator"
+version = "0.1.0"
 edition = "2021"
-authors = ["Subhajit chaudhury <github: github.com/subhdotsol>"]
+authors = ["Hemant Kumar <github: github.com/hksoldev>"]
 license-file = "LICENSE"
-repository = "https://github.com/subhdotsol/aaahhh"
+repository = "https://github.com/hksoldev/Keyso"
 readme = "README.md"
 categories = []
-keywords = ["aaahhh", "keyboard", "keypress", "sounds"]
+keywords = ["Keyso", "keyboard", "keypress", "sounds"]
 
 [dependencies]
 rodio = "0.20.1"
