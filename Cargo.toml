@@ -1,7 +1,7 @@
 [package]
 name = "keyso"
 description = "A mechanical keyboard sound stroke simulator"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Hemant Kumar <github: github.com/hksoldev>"]
 license-file = "LICENSE"
