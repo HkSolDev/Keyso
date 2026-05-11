@@ -31,6 +31,10 @@ pub fn daemon(index: usize, debug: bool, volume: f32) -> Result<(), Box<dyn Erro
             let config: SoundPack = SoundPack::parse_config_file(&SoundFiles::HolyPanda, debug)?;
             listen_and_play(debug, &SoundFiles::HolyPanda, stream_handle, config, volume);
         }
+        3 => {
+            let config: SoundPack = SoundPack::parse_config_file(&SoundFiles::Acternity, debug)?;
+            listen_and_play(debug, &SoundFiles::Acternity, stream_handle, config, volume);
+        }
         a => Err(EchoErrors::UnwantedSelectionIndex { index: a })?,
     }
 

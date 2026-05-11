@@ -2,6 +2,7 @@ pub enum SoundFiles {
     CherryMxRed,
     GateronBlack,
     HolyPanda,
+    Acternity,
 }
 
 impl SoundFiles {
@@ -10,6 +11,7 @@ impl SoundFiles {
             SoundFiles::CherryMxRed => "Cherry MX Red".to_string(),
             SoundFiles::GateronBlack => "Gateron Black".to_string(),
             SoundFiles::HolyPanda => "Holy Panda".to_string(),
+            SoundFiles::Acternity => "Acternity".to_string(),
         }
     }
 
@@ -18,6 +20,7 @@ impl SoundFiles {
             SoundFiles::CherryMxRed => "cherry_mx_red.zip".to_string(),
             SoundFiles::GateronBlack => "gateron_black.zip".to_string(),
             SoundFiles::HolyPanda => "holy_panda.zip".to_string(),
+            SoundFiles::Acternity => "acternity.zip".to_string(),
         }
     }
 
@@ -26,6 +29,7 @@ impl SoundFiles {
             SoundFiles::CherryMxRed => "CHERRYRED".to_string(),
             SoundFiles::GateronBlack => "EGOREA".to_string(),
             SoundFiles::HolyPanda => "FALLOUT".to_string(),
+            SoundFiles::Acternity => "ACTERNITY".to_string(),
         }
     }
 }
