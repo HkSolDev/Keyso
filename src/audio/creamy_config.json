@@ -1,10 +1,10 @@
 {
     "id": "sound-pack-1200000000002",
-    "name": "Acternity",
+    "name": "Creamy",
     "default": true,
     "key_define_type": "single",
     "includes_numpad": false,
-    "sound": "acternity_sound.ogg",
+    "sound": "creamy_sound.ogg",
     "defines": {
         "1": [
             2894,

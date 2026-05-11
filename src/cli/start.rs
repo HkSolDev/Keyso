@@ -30,7 +30,7 @@ pub fn start(debug: bool, volume: f32) -> Result<(), Box<dyn Error>> {
         SoundFiles::get_name(&SoundFiles::CherryMxRed),
         SoundFiles::get_name(&SoundFiles::GateronBlack),
         SoundFiles::get_name(&SoundFiles::HolyPanda),
-        SoundFiles::get_name(&SoundFiles::Acternity),
+        SoundFiles::get_name(&SoundFiles::Creamy),
     ];
 
     let selection: usize = Select::with_theme(&ColorfulTheme::default())
@@ -152,7 +152,7 @@ pub fn start(debug: bool, volume: f32) -> Result<(), Box<dyn Error>> {
 
         3 => {
             let dir_path: PathBuf =
-                FILE_PATH.join(SoundFiles::get_extract_dir(&SoundFiles::Acternity));
+                FILE_PATH.join(SoundFiles::get_extract_dir(&SoundFiles::Creamy));
 
             if dir_path.exists() {
                 if debug {
@@ -161,16 +161,16 @@ pub fn start(debug: bool, volume: f32) -> Result<(), Box<dyn Error>> {
             } else {
                 fs::create_dir_all(&dir_path)?;
 
-                let config_str: &str = include_str!("../audio/acternity_config.json");
+                let config_str: &str = include_str!("../audio/creamy_config.json");
                 let config_path: PathBuf = dir_path.join("config.json");
                 fs::write(&config_path, config_str)?;
 
-                let sound_bytes: &[u8] = include_bytes!("../audio/acternity_sound.ogg");
-                let sound_path: PathBuf = dir_path.join("acternity_sound.ogg");
+                let sound_bytes: &[u8] = include_bytes!("../audio/creamy_sound.ogg");
+                let sound_path: PathBuf = dir_path.join("creamy_sound.ogg");
                 fs::write(&sound_path, sound_bytes)?;
 
                 if debug {
-                    println!("Successfully created Acternity sound pack at {:?}", dir_path);
+                    println!("Successfully created Creamy sound pack at {:?}", dir_path);
                 }
             }
 

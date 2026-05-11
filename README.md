@@ -31,6 +31,7 @@ Experience the satisfying auditory feedback of premium mechanical switches on *a
   - 🔴 `Cherry MX Red`
   - ⚫ `Gateron Black`
   - 🐼 `Holy Panda`
+  - 🍦 `Creamy`
 - **True Background Daemon**: Built-in support to detach safely from your terminal. Launch it, close your window, and enjoy the sounds.
 - **Smart Key Handling**: Implements a dedicated HashSet key-tracker to prevent annoying repetitive audio spam during long, continuous key-holds.
 - **Cross-Platform**: Natively hooks into global key events on macOS, Windows, and Linux via `rdev`.
@@ -57,9 +58,16 @@ Keyso is designed with an extremely simple CLI designed to get out of your way.
 
 ### Start the Simulator
 
+**If installed globally:**
 ```bash
 keyso start
 ```
+
+**If running from source:**
+```bash
+cargo run -- start
+```
+
 This drops you into a quick, interactive dropdown menu to let you select your desired mechanical switch. 
 
 > **Note:** *If this is your first time using a specific switch, Keyso will automatically fetch and unpack the exact sound profiles required into a hidden `~/.keyso` directory in your home path.*
@@ -68,10 +76,29 @@ Once selected, Keyso instantly spins up the audio listener natively in the backg
 
 ### Stop the Simulator
 
+**If installed globally:**
 ```bash
 keyso stop
 ```
+
+**If running from source:**
+```bash
+cargo run -- stop
+```
+
 There's no need to reach for your task manager! Keyso utilizes process-ID (PID) targeting. Executing `keyso stop` instantly searches for your active background daemon and safely shuts it down from any terminal window.
+
+---
+
+## 🆙 Updating Keyso
+
+To update to the latest version of Keyso from [crates.io](https://crates.io/crates/keyso), simply run:
+
+```bash
+cargo install keyso --force
+```
+
+This will fetch the latest source, re-compile it with optimizations, and replace your existing binary.
 
 ---
 
